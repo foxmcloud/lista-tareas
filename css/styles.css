@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #041A1B;
+}
+
+h1{
+    color: white;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-input{
+    display: flex;
+    height: 35px;
+}
+
+#HayTareas {
+    color: white;
+}
+
+#btnAgregarTarea{
+    background-color: rgba(177, 124, 26, 0.534);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+}
+
+#tareaInput{
+    background-color: rgb(196, 193, 193);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+.tarea-completada{
+    color: green;
+    text-decoration: line-through;
+
+}
+
+.tarea-completada:before{
+    content: "✅";
+    margin: 5px;
+    
+}
+
+.tarea-pendiente:before{
+    content: "🔘";
+    margin: 5px;
+}
+
+.boton-eliminar:before{
+    content: "❌";
+    margin: 5px;
+}
+
+#listaTareas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #1E5BE8;
+    width: 400px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.tarea {
+    padding: 20px;
+    background-color: gray;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#icon{
+    width: 20px;
+    height: 20px;
+}
+
+.textoTarea{
+    flex-grow: 1;
+}
